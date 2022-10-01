@@ -33,6 +33,35 @@ button, select {
     width: 30%;
     text-transform: none;
 }
-#order_client_id {
-    height: 20px;
+form input[type=text], 
+form input[type=password], 
+form input[type=email], 
+form input[type=number], 
+form input[type=url], 
+form input[type=tel] {
+    width: 30%;
+}
+input[id^="q_"]{
+    width: 47% !important;
+}
+form select, #order_product_ids, #order_client_id {
+    border: 1px solid #c9d0d6;
+    border-radius: 3px;
+    font-size: 0.95em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: none;
+    padding: 8px 10px 7px;
+}
+
+form select {
+    padding: 8px 10px 7px;
+}
+
+form.filter_form .filter_form_field.select_and_search select,
+form.filter_form .filter_form_field.filter_date_range input[type=text] {
+    width: 112px;
+}
+
+form.filter_form .filter_form_field.select_and_search input[type=text] {
+    margin-left: 10px;
 }
