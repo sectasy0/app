@@ -12,7 +12,9 @@ ActiveAdmin.register Order do
             class: "button-danger", data: { confirm: "Are you sure you want to delete this order?" }
     end
 
-    
+    action_item :mark_as_sended, only: :show do
+        link_to "Mark As Sended", mark_as_sended_admin_order_path, class: "button-success", method: :post
+    end
 
     index do
         selectable_column
